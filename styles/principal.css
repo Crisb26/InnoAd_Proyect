@@ -64,13 +64,12 @@ section {
     padding: 6rem 2rem;
 }
 .jaguar {
-    min-height: 100vh;
+    padding-top: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     background: linear-gradient(rgba(10,10,26,0.8), rgba(10,10,26,0.9));
-    padding-top: 80px;
 }
 .contenido-hero h2 {
     font-size: 3.5rem;
@@ -96,6 +95,26 @@ section {
 .boton-secundario {
     border: 2px solid var(--color-primario);
     color: var(--color-texto);
+}
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    padding: 20px;
+    max-width: 100vh;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 .tarjetas-container {
     display: grid;
