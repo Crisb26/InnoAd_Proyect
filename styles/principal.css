@@ -1,0 +1,192 @@
+:root {
+    --color-primario: #00ff94;
+    --color-secundario: #0066ff;
+    --color-fondo: #0a0a1a;
+    --color-texto: #ffffff;
+    --fuente-principal: 'Segoe UI', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+.aguila {
+    background: rgba(10, 10, 26, 0.95);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0, 255, 148, 0.2);
+}
+.logo-container {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.logo-container h1 {
+    font-size: 2.5rem;
+    color: var(--color-primario);
+    text-shadow: 0 0 10px rgba(0, 255, 148, 0.3);
+}
+.marca {
+    font-size: 0.5em;
+    vertical-align: super;
+}
+.slogan {
+    font-size: 1.2rem;
+    color: var(--color-texto);
+    opacity: 0.9;
+}
+.colibri ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+.colibri a {
+    color: var(--color-texto);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.colibri a:hover {
+    background: linear-gradient(45deg, var(--color-primario), var(--color-secundario));
+    color: var(--color-fondo);
+}
+section {
+    padding: 6rem 2rem;
+}
+.jaguar {
+    padding-top: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(10,10,26,0.8), rgba(10,10,26,0.9));
+}
+.contenido-hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, var(--color-primario), var(--color-secundario));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.boton-principal, .boton-secundario {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin: 1rem;
+}
+.boton-principal {
+    background: linear-gradient(45deg, var(--color-primario), var(--color-secundario));
+    color: var(--color-fondo);
+}
+.boton-secundario {
+    border: 2px solid var(--color-primario);
+    color: var(--color-texto);
+}
+.gallery {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+/* Scrolling container */
+.gallery1 {
+    display: flex;
+    gap: 10px; /* Space between images */
+    animation: marquee 30s linear infinite;
+}
+
+/* Make sure images are properly sized */
+.gallery1 img {
+    height: auto;
+    max-height: 200px; /* Adjust as needed */
+    width: auto;
+    flex-shrink: 0;
+}
+
+/* Animation */
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+.tarjetas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+.tarjeta {
+    background: rgba(255,255,255,0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+.tarjeta:hover {
+    transform: translateY(-10px);
+}
+.tortuga {
+    background: rgba(10, 10, 26, 0.95);
+    padding: 2rem;
+    text-align: center;
+}
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+.colibri-footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+.colibri-footer a {
+    color: var(--color-texto);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.colibri-footer a:hover {
+    background: linear-gradient(45deg, var(--color-primario), var(--color-secundario));
+    color: var(--color-fondo);
+    border: 0px;
+}
+.footer-bottom {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+@media (max-width: 768px) {
+    .colibri ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .contenido-hero h2 {
+        font-size: 2.5rem;
+    }
+}

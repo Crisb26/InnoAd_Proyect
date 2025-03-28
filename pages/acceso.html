@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso - InnoAd</title>
+    <link rel="stylesheet" href="../styles/principal.css">
+    <link rel="stylesheet" href="../styles/efectos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const tabs = document.querySelectorAll(".tab a");
+            const tabContents = document.querySelectorAll(".tab-content > div");
+        
+            tabs.forEach(tab => {
+                tab.addEventListener("click", function(event) {
+                    event.preventDefault();
+        
+                    // Eliminar la clase 'active' de todas las pestañas
+                    document.querySelector(".tab.active")?.classList.remove("active");
+                    this.parentElement.classList.add("active");
+        
+                    // Ocultar todos los contenidos
+                    tabContents.forEach(content => content.style.display = "none");
+        
+                    // Mostrar el contenido correspondiente
+                    const target = this.getAttribute("href");
+                    document.querySelector(target).style.display = "block";
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="aguila">
+        <div class="logo-container">
+            <h1>
+                <a href="../index.html">InnoAd<span class="marca">®</span></a>
+            </h1>
+            <p class="slogan">La publicidad del mañana, hoy</p>
+        </div>
+        
+        <nav class="colibri">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="boton-acceso"><a href="acceso.html">Acceder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="servicios-hero jaguar">
+            <div class="contenido-hero">
+                <h2>Accesos</h2>
+                <p>Bienvenido a la Familia InnoAd</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="form">
+        <ul class="tab-group">
+            <li class="tab active"><a href="#signup">Sign Up</a></li>
+            <li class="tab"><a href="#login">Log In</a></li>
+        </ul>
+        
+        <div class="tab-content">
+            <div id="signup">   
+                <h1>Sign Up for Free</h1>
+                <form action="/" method="post">
+                    <div class="top-row">
+                        <div class="field-wrap">
+                            <input type="text" required autocomplete="off" placeholder="First Name *" />
+                        </div>
+                        <div class="field-wrap">
+                            <input type="text" required autocomplete="off" placeholder="Last Name *" />
+                        </div>
+                    </div>
+                    <div class="field-wrap">
+                        <input type="email" required autocomplete="off" placeholder="Email Address *" />
+                    </div>
+                    <div class="field-wrap">
+                        <input type="password" required autocomplete="off" placeholder="Set a Password *" />
+                    </div>
+                    <button type="submit" class="button button-block">Get Started</button>
+                </form>
+            </div>
+            
+            <div id="login">   
+                <h1>Welcome Back!</h1>
+                <form action="/" method="post">
+                    <div class="field-wrap">
+                        <input type="email" required autocomplete="off" placeholder="Email Address *" />
+                    </div>
+                    <div class="field-wrap">
+                        <input type="password" required autocomplete="off" placeholder="Password *" />
+                    </div>
+                    <p class="forgot"><a href="#">Forgot Password?</a></p>
+                    <button class="button button-block">Log In</button>
+                </form>
+            </div>
+        </div><!-- tab-content -->
+    </div> <!-- /form -->
+
+    <footer class="tortuga">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>InnoAd<span class="marca">®</span></h3>
+                <p>La publicidad del mañana, hoy</p>
+            </div>
+            <div class="colibri-footer">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="clientes.html">Clientes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 InnoAd<span class="marca">®</span> - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/colibri.js"></script>
+    
+</body>
+</html>
