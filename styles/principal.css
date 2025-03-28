@@ -112,7 +112,7 @@ section {
     animation: marquee 30s linear infinite;
 }
 
-/* Make sure images are properly sized */
+/* Make sure images are properly sized  pruba de git push*/
 .gallery1 img {
     height: auto;
     max-height: 200px; /* Adjust as needed */
