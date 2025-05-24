@@ -47,9 +47,3 @@ foreign key (responsable) references usuarios (id_usuario)
 
 create index idx_usuario_correo on usuarios(correo);
 create index idx_campaña_nombre on campañas(nombre);
-
-SELECT user FROM mysql.user;
-show databases;
-use innoad;
-SOURCE C:/Users/bueno/Desktop/UMBRELLA/INST SENA/PROYECTO FINAL/InnoAd_Proyect/database/DataBaseInnoAd.sql;
-SOURCE C:/Users/bueno/Desktop/UMBRELLA/INST SENA/PROYECTO FINAL/InnoAd_Proyect/database/DataBaseInnoAd.sql;
