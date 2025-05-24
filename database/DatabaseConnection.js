@@ -3,7 +3,7 @@ const mysql = require('mysql2');
 const conexion = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'Cris93022611184**', // ¡Aquí pon tu contraseña correcta!
+    password: 'Cris93022611184**', //ojo que es solo desde mi local
     database: 'innoad',
     port: 3306
 });
