@@ -44,9 +44,9 @@ body {
   }
   
   .send-button {
-    margin-top: 15px;
+    margin-top: 1px;
     height: 34px;
-    width: 400px;
+    width: 401px;
     overflow: hidden;
     transition: all .2s ease-in-out;
     color: white;

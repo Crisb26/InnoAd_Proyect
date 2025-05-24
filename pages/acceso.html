@@ -69,20 +69,20 @@
         <div class="tab-content">
             <div id="signup">   
                 <h1>Sign Up for Free</h1>
-                <form action="/" method="post">
+                <form id="signup-form">
                     <div class="top-row">
                         <div class="field-wrap">
-                            <input type="text" required autocomplete="off" placeholder="First Name *" />
+                            <input type="text" name="nombre" required autocomplete="off" placeholder="First Name *" />
                         </div>
                         <div class="field-wrap">
-                            <input type="text" required autocomplete="off" placeholder="Last Name *" />
+                            <input type="text" name="apellido" required autocomplete="off" placeholder="Last Name *" />
                         </div>
                     </div>
                     <div class="field-wrap">
-                        <input type="email" required autocomplete="off" placeholder="Email Address *" />
+                        <input type="email" name="correo" required autocomplete="off" placeholder="Email Address *" />
                     </div>
                     <div class="field-wrap">
-                        <input type="password" required autocomplete="off" placeholder="Set a Password *" />
+                        <input type="password" name="contraseña" required autocomplete="off" placeholder="Set a Password *" />
                     </div>
                     <button type="submit" class="button button-block">Get Started</button>
                 </form>
@@ -125,6 +125,7 @@
     </footer>
 
     <script src="../scripts/colibri.js"></script>
+    <script src="../scripts/contacto.js"></script>
     
 </body>
 </html>
